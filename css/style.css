@@ -178,6 +178,14 @@ html, body{
     text-decoration: none;
 }
 
+.fa-envelope{
+    color: white;
+}
+
+.fa-linkedin{
+    color: white;
+}
+
 @media(max-width: 767px){
     .sm-dev{
         padding: 60px;
