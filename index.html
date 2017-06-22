@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <nav class = "nav">
+        <div id ="logo">Christian Sumano </div>
+        <ul id="links">
+            <h1> Computer Science student at SUNY Oswego </h1>
+            <!-- <li><a href="#"class = "linkslogo">Home</a></li>
+            <li><a href="about.html "class = "linkslogo">About</a></li>
+            <li><a href="#"class = "linkslogo">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <div id="hero">
+        <h1> Welcome</h1>
+        <a href="#icons" class="button button-accent">Learn More</a>
+    </div>
+
+     <div class ="container" id="icons">
+         <div id="iconrow" class ="row">
+             <div class ="col-md-4 sm-dev">
+                 <i class="fa fa-book fa-5x" aria-hidden="true"></i>
+                 <h2>Skills</h2>
+                 <p>My skills include
+                     JAVA, Python
+                     C, and photoshop </p>
+
+             </div>
+             <div class ="col-md-4 sm-dev">
+                  <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
+                 <h2>Projects</h2>
+                 <p>LSST Event Broker</p>
+             </div>
+             <div class ="col-md-4 sm-dev">
+                  <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+                 <h2>Stats</h2>
+                 <p> In progress </p>
+             </div>
+         </div>
+     </div>
+
+
+
+
+     <div class = "container">
+         <div id="iconrow" class ="row">
+             <div class ="col-md-4 sm-dev">
+
+
+             </div>
+             <div class ="col-md-4 sm-dev">
+                 <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                 <h3><a href="https://github.com/csumano"class = "linkslogobottom">Github</a></h3>
+             </div>
+             <div class ="col-md-4 sm-dev">
+
+             </div>
+         </div>
+     </div>
+
+     <div class="footer">
+         <div id = "footertext">
+             <li><a href="mailto:csumano@oswego.edu "class = "linkslogofoot">Email: csumano@oswego.edu</a></li>
+             <li><a href="https://www.linkedin.com/in/christian-sumano-668156134/"class = "linkslogofoot">Linkedin</a></li>
+         </div>
+     </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+   </script>
+
+  </body>
+</html>

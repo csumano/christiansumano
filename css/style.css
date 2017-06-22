@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ----- Navigation bar -------*/
+
+.nav {
+    background: transparent;
+    height: 70px;
+    width: 100%;
+    z-index: 9999999999;
+}
+
+.nav #logo{
+
+    color: #fff;
+    padding: 25px 0 0 25px;
+    font-size: 40px;
+    font-family: 'Cookie'
+}
+
+.nav #links, #logo{
+    display: inline-block;
+}
+
+
+.nav #links{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 25px 0 0;
+    font-size: 20px;
+}
+
+
+.nav #links > h1{
+    display: inline-block;
+    color: #fff;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+
+
+.row{
+    text-align: center;
+}
+
+.linkslogo{
+    color: #fff;
+}
+
+.linkslogo:hover, .linkslogo:focus{
+    font-weight: bold;
+    color : #fff;
+    text-decoration: none;
+
+}
+
+
+#hero{
+    background: url('../img/sun.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    margin-top: -70px;
+    z-index: -50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* Header for welcome sign*/
+
+#hero > h1 {
+    color: #fff;
+    margin-top: -60px;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+
+
+}
+
+/*--------button---------- */
+
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;*/
+
+}
+
+.button-accent{
+    color: #fff;
+}
+
+.button-accent:hover, .button-accent:focus{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#iconrow{
+    padding: 60px;
+    outline: 2px solid #000;
+    outline-offset: -2em;
+}
+
+#middlepage{
+    padding: 65px;
+}
+
+#middlepage > h3{
+    padding-right: 24px;
+
+
+}
+
+.linkslogobottom{
+    color: #161616 ;
+}
+
+.linkslogobottom:hover, .linkslogobottom:focus{
+    font-style: oblique;
+    text-decoration: none;
+
+}
+
+
+.footer{
+    background: #161616;
+    padding: 20px;
+    color: #fff;
+
+}
+
+#footertext{
+    text-align: center;
+}
+
+.footer #footertext {
+    list-style: none;
+    color: #000;
+}
+
+.linkslogofoot{
+    color: #fff;
+}
+
+.linkslogofoot:hover, .linkslogofoot:focus{
+    text-decoration: none;
+    color : #fff;
+    font-weight: bold;
+}
+
+.linkslogofoot:visited {
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+@media(max-width: 767px){
+    .sm-dev{
+        padding: 60px;
+    }
+}
+
+
+/*About page */
