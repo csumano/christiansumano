@@ -8,7 +8,7 @@ html, body{
     font-family: 'Raleway', sans-serif;
 }
 
-/* ----- Navigation bar -------*/
+/* ----- Navigation bar --------------------------------------*/
 
 .nav {
     background: transparent;
@@ -20,8 +20,8 @@ html, body{
 .nav #logo{
 
     color: #fff;
-    padding: 25px 0 0 25px;
-    font-size: 40px;
+    padding: 20px 0 0 20px;
+    font-size: 43px;
     font-family: 'Cookie'
 }
 
@@ -45,7 +45,7 @@ html, body{
     display: inline-block;
     color: #fff;
     padding-right: 15px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
@@ -67,7 +67,8 @@ html, body{
 
 
 #hero{
-    background: url('../img/sun.jpg');
+    /* background: url('../img/sun.jpg'); */
+    background: linear-gradient(to right, #70dbdb, #0080ff);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -95,7 +96,7 @@ html, body{
 
 }
 
-/*--------button---------- */
+/*------------button------------------------------------------- */
 
 .button {
     display: inline-block;
@@ -119,6 +120,7 @@ html, body{
 
 }
 
+
 #iconrow{
     padding: 60px;
     outline: 2px solid #000;
@@ -140,8 +142,9 @@ html, body{
 }
 
 .linkslogobottom:hover, .linkslogobottom:focus{
-    font-style: oblique;
+    font-weight: bold;
     text-decoration: none;
+    color: black
 
 }
 
