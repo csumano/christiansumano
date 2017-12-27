@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web');
 
 
 html, body{
@@ -21,8 +22,8 @@ html, body{
 
     color: #fff;
     padding: 20px 0 0 20px;
-    font-size: 43px;
-    font-family: 'Cookie'
+    font-size: 34px;
+    font-family: 'Istok Web'
 }
 
 .nav #links, #logo{
