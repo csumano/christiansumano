@@ -56,7 +56,7 @@ html, body{
 
 #hero{
     /* background: url('../img/sun.jpg'); */
-    background: linear-gradient(to right, #70dbdb, #0080ff);
+    background: linear-gradient(140deg, #70dbdb, #0080ff);
     background-size: cover;
     background-position: center;
     height: 100%;
