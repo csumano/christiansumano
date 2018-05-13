@@ -24,7 +24,7 @@ html, body{
 
 .nav #logo{
     color: #fff;
-    padding: 20px 0 0 20px;
+    padding: 25px 0 0 25px;
     font-size: 34px;
     font-family: 'Istok Web'
 }
@@ -35,8 +35,6 @@ html, body{
     padding-right: 15px;
     font-size: 22px;
 }
-
-
 
 .row{
     text-align: center;
@@ -53,15 +51,14 @@ html, body{
 
 }
 
-
 #hero{
     /* background: url('../img/sun.jpg'); */
-    background: linear-gradient(to right, #70dbdb, #0080ff);
+    background: linear-gradient(to left, #70dbdb, #0080ff);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
     background-blend-mode: multiply;
     margin-top: -70px;
     z-index: -50;
@@ -80,8 +77,6 @@ html, body{
     margin-top: -60px;
     font-size: 2.75rem;
     margin-bottom: 1.5rem;
-
-
 }
 
 /*------------button------------------------------------------- */
@@ -94,7 +89,6 @@ html, body{
     border-width: 2px;
     border-style: solid;
     padding: .5em 1.75em;*/
-
 }
 
 .button-accent{
@@ -108,7 +102,6 @@ html, body{
 
 }
 
-
 #iconrow{
     padding: 60px;
     outline: 2px solid #000;
@@ -121,8 +114,6 @@ html, body{
 
 #middlepage > h3{
     padding-right: 24px;
-
-
 }
 
 .linkslogobottom{
@@ -136,12 +127,12 @@ html, body{
 
 }
 
+/*---------------------footer-----------------------------------------*/
 
 .footer{
     background: #161616;
     padding: 20px;
     color: #fff;
-
 }
 
 #footertext{
@@ -196,6 +187,5 @@ html, body{
         padding: 0;
     }
 }
-
 
 /*About page */
