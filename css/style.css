@@ -22,11 +22,12 @@ html, body{
     align-items: baseline;
 }
 
+
 .nav #logo{
     color: #fff;
     padding: 25px 0 0 25px;
     font-size: 34px;
-    font-family: 'Istok Web'
+    font-family: 'Istok Web';
 }
 
 .nav #link{
@@ -34,6 +35,8 @@ html, body{
     color: #fff;
     padding-right: 15px;
     font-size: 22px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: .75s;
 }
 
 .row{
@@ -77,6 +80,9 @@ html, body{
     margin-top: -60px;
     font-size: 2.75rem;
     margin-bottom: 1.5rem;
+    -webkit-animation-duration: 3s;
+
+
 }
 
 /*------------button------------------------------------------- */
@@ -97,7 +103,7 @@ html, body{
 }
 
 .button-accent:hover, .button-accent:focus{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
     color: #fff;
     text-decoration: none;
 
