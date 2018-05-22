@@ -27,7 +27,8 @@ html, body{
     color: #fff;
     padding: 25px 0 0 25px;
     font-size: 34px;
-    font-family: 'Istok Web';
+    font-family: 'Raleway';
+    
 }
 
 .nav #link{
@@ -56,12 +57,13 @@ html, body{
 
 #hero{
     /* background: url('../img/sun.jpg'); */
-    background: linear-gradient(to left, #70dbdb, #0080ff);
+    /* background: linear-gradient(to left, #70dbdb, #0080ff); */
+    background: linear-gradient(to top, rgba(135,206,305,0), rgba(0,128,255,1));
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(0,0,0,0.3); */
     background-blend-mode: multiply;
     margin-top: -70px;
     z-index: -50;
@@ -137,7 +139,7 @@ html, body{
 /*---------------------footer-----------------------------------------*/
 
 .footer{
-    background: #161616;
+    background: #282828;
     padding: 20px;
     color: #fff;
 }
