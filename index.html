@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
@@ -22,59 +21,169 @@
 
     <div id="hero">
         <h1 class ="animated fadeIn"> Welcome</h1>
-        <a href="#icons" class="button button-accent">Learn More</a>
+        <a href="#iconrow" class="button button-accent">Learn More</a>
     </div>
 
-     <div class ="container" id="icons">
-         <div id="iconrow" class ="row">
-             <div class ="col-md-4 sm-dev">
-                 <i class="fa fa-book fa-5x" aria-hidden="true"></i>
-                 <h2>Languages</h2>
-                 <p> Java, Python,
-                     C, HTML/CSS </p>
+    <div class = "container hideme">
+        <div id="iconrow">
+            <div class="container text-center">
+                <h1>Projects</h1>
+                <i class="fas fa-rocket" style="font-size:30px; padding: 10px;"></i>
+                <div class = "card-deck">
 
-             </div>
-             <div class ="col-md-4 sm-dev">
-                  <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
-                 <h2>Projects</h2>
-                 <p>LSST Event Broker,
-                    NOAA Weather Database, more on GitHub
-                 </p>
-             </div>
-             <div class ="col-md-4 sm-dev">
-                  <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
-                 <h2>Stats</h2>
-                 <p> In progress </p>
+                    <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
+                        <!-- <img class="card-img-top" src="img/gopigo.gif" alt="Go Pi Go"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">ACC for GoPiGo</h5>
+                            <p class="card-text">A cruise control system for a GoPiGo rover that maintains a certain speed and safe distance to other robots to prevent collisions</p>
+                            <a href="https://github.com/csumano/GoPiGo" target="_blank" class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
+                        <!-- <img class="card-img-top" src="img/noaa.png" alt="NOAA"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">NOAA Weather Database</h5>
+                            <p class="card-text">NOAA weather data API to parse and put into a custom hash table to find similar yearly precipitation across 1000 weather stations</p>
+                            <a href="https://github.com/csumano/NOAAdatabase" target="_blank" class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
+                        <!-- <img class="card-img-top" src="img/gopigo.gif" alt="Go Pi Go"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">LSST Event Broker</h5>
+                            <p class="card-text">A python framework for creating transient classifiers allowing researchers to classify astronomical events from incoming data for the Large Synoptic Survey Telescope</p>
+                            <a href="https://github.com/csumano/lsst-event-broker" target="_blank" class="btn btn-primary">GitHub</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class = "card-deck">
+                <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
+                    <!-- <img class="card-img-top" src="img/gopigo.gif" alt="Go Pi Go"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Applicaiton</h5>
+                        <p class="card-text">An application that allows sellers to post items for sale and allows buyers to swipe left (dislike and see next item) or right (add to cart) on those items based on the specific category they have chosen</p>
+                        <a href="https://github.com/CSC420GUI/FinalProject" target="_blank" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Cleaning Room Game</h5>
+                        <p class="card-text">This is a small simple project in which a use can interact through a text based, command line interface in which the user has to clean/dirty rooms based on specific rules</p>
+                        <a href="https://github.com/csumano/Cleaning-RoomGame" target="_blank" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Factorization project</h5>
+                        <p class="card-text">This proejct goes through various Factorization methods that takes 2 very large prime numbers to find the fastest method by parsing memory usage and time took to factor</p>
+                        <a href="https://github.com/csumano/CSC332RSAProj"target="_blank"  class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+     <div class = "container hideme">
+         <div id="iconrow">
+             <div class="container text-center ">
+                 <h1>Courses</h1>
+                 <i class="fas fa-book" style="padding: 10px; font-size:30px"></i>
+                 <h5>Relevant courses I have completed</h5>
+                 <div class="row hideme">
+                     <div class="column">
+                         <ul style="list-style: none;" class="Courses">
+                             <h4>CS Courses</h4>
+                             <li>Software Depoloyment</li>
+                             <li>Software Design</li>
+                             <li>Computer Networks</li>
+                             <li>Requirements Engineering</li>
+                             <li>Game Design</li>
+                             <li>Graphical User Interfaces</li>
+                             <li>Software Quality</li>
+                             <li>Software Engineering</li>
+                             <li>Data Structures & File Process</li>
+                             <li>Programming Languages</li>
+                             <li>Systems Programming</li>
+                             <li>Foundation of Computer Science</li>
+                             <li>Princples of Programming</li>
+                             <br>
+                             <li>Human Computer Interaction</li>
+                             <li>Software Entrepreneurship</li>
+                         </ul>
+                     </div>
+
+                     <div class="column">
+                         <ul style="list-style: none;" class="Courses">
+                             <h4>Math Courses</h4>
+                             <li>Crytology</li>
+                             <li>Numerical Analysis</li>
+                             <li>Multivriable Calculus</li>
+                             <li>Matrix Algebra</li>
+                             <li>Discrete Mathematics</li>
+                             <li>Calculus II</li>
+                             <li>Calculus I</li>
+                         </ul>
+
+                     </div>
+                 </div>
              </div>
          </div>
      </div>
-
-     <div class = "container">
-         <div id="iconrow" class ="row">
-             <div class ="col-md-4 sm-dev">
-             </div>
-             <div class ="col-md-4 sm-dev">
-                 <a href="https://github.com/csumano" class = "linkslogobottom">
-                 <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-             </a>
-                 <h3><a href="https://github.com/csumano"class = "linkslogobottom">Github</a></h3>
-             </div>
-             <div class ="col-md-4 sm-dev">
-             </div>
+     <div class = "container hideme">
+         <div id="iconrow">
+            <div class ="container text-center hideme">
+                <h1>Technical Skills</h1>
+                <i class="fas fa-database" style="font-size: 30px; padding:10px"></i>
+                    <div class="row hideme">
+                        <div class="column">
+                            <ul style="list-style: none;">
+                                <h4>Languages</h4>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>Haskell</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul style="list-style: none;">
+                                <h4>Tools</h4>
+                                <li>MySQL</li>
+                                <li>IntelliJ</li>
+                                <li>Terminal</li>
+                                <li>Git/GitHub</li>
+                                <li>Vim</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul style="list-style: none;">
+                                <h4>Software</h4>
+                                <li>Windows</li>
+                                <li>Linux</li>
+                                <li>Microsft Office</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
          </div>
      </div>
-
      <div class="footer">
          <div id = "footertext">
-             <li><i class="fa fa-envelope fa-1x" aria-hidden="true"></i><a href="mailto:csumano@oswego.edu "class = "linkslogofoot"> csumano@oswego.edu</a></li>
-             <li><i class="fa fa-linkedin fa-1x" aria-hidden="true"></i><a href="https://www.linkedin.com/in/christian-sumano-668156134/"class = "linkslogofoot"> Linkedin</a></li>
+             <h4>Contact</h4>
+             <a href="https://github.com/csumano" target="_blank" ><i class="fab fa-github" style="color: white" aria-hidden="true"></i></a>
+             <a href="mailto:csumano@oswego.edu"><i class="fas fa-envelope" style="color: #D7D7D7" ></i></a>
+             <a href="https://www.linkedin.com/in/christian-sumano-668156134/" target="_blank" > <i class="fab fa-linkedin" style="color: #0077B5"></i></a>
+
          </div>
      </div>
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -87,18 +196,29 @@
               if (target.length) {
                 $('html, body').animate({
                   scrollTop: target.offset().top
-                }, 1000);
+              }, 1200);
                 return false;
               }
             }
           });
         });
-
         $(document).ready(function(){
             $(this).scrollTop(0);
         });
-
+        $(function(){
+            $('.monster').fadeIn('slow');
+        });
+        $(document).ready(function() {
+            $(window).scroll( function(){
+            $('.hideme').each( function(i){
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                var top_of_object = $(this).position().top
+                if( bottom_of_window > top_of_object + 250){
+                    $(this).animate({'opacity':'1'},1000);
+                }
+            });
+        });
+    });
    </script>
-
   </body>
 </html>

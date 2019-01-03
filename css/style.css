@@ -9,6 +9,11 @@ html, body{
     font-family: 'Raleway', sans-serif;
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 /* ----- Navigation bar --------------------------------------*/
 
 .nav {
@@ -99,7 +104,7 @@ html, body{
     border-width: 2px;
     border-style: solid;
     border-radius: 25px;
-    padding: .5em 1.75em;*/
+    padding: .5em 1.75em;
 }
 
 .button-accent{
@@ -127,6 +132,39 @@ html, body{
     padding-right: 24px;
 }
 
+h5{
+    font-size: 20px;
+}
+
+.card-img-top{
+    height: 250px;
+    length: 50px;
+}
+
+.card-title{
+    padding-top: 10px;
+}
+
+/*----------------Button for projects--------------*/
+
+.btn-primary{
+
+    background-color: black;
+    border-color: black;
+
+}
+
+.btn-primary:focus{
+
+    background-color: black;
+    border-color: black;
+
+}
+
+.card-body{
+    padding: 20px;
+}
+
 .linkslogobottom{
     color: #161616 ;
 }
@@ -138,21 +176,24 @@ html, body{
 
 }
 
+.column {
+    flex: 25%;
+    padding: 10px;
+
+}
+
+
 /*---------------------footer-----------------------------------------*/
 
 .footer{
     background: #282828;
-    padding: 20px;
+    padding: 53px;
     color: #fff;
 }
 
 #footertext{
     text-align: center;
-}
-
-.footer #footertext {
-    list-style: none;
-    color: #000;
+    font-size: 40px;
 }
 
 .linkslogofoot{
