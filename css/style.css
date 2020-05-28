@@ -48,14 +48,14 @@ nav .icon {
 
 nav .navlist {
     float: right;
-    
-    margin-right: 60px;
+    padding-left: 50px;
+    margin-right: 10px;
 }
 
 nav .list {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 23px;
+  padding-top: 30px;
   position: relative;
 }
 
