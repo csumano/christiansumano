@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 @import url('https://fonts.googleapis.com/css?family=Istok+Web');
 
-
 html, body{
     height: 100%;
     width: 100%;
@@ -14,37 +13,96 @@ html, body{
     opacity:0;
 }
 
-/* ----- Navigation bar --------------------------------------*/
+/* Navigation bar */
 
-.nav {
-    background: transparent;
-    height: 70px;
+header {
+  background: #282828;
+  
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+h1.logo {
+  float: left;
+  padding: 10px 0;
+  color: white;
+  font-size: 18px;
+  width: 90px;
+  border: 2px solid white;
+  margin-top: 12px;
+  text-align: center;
+}
+
+nav {
+    height: 80px;
     width: 100%;
-    z-index: 9999999999;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
 }
 
+nav .icon {
+    display: none;
+}
 
-.nav #logo{
+nav .navlist {
+    float: right;
+    
+    margin-right: 60px;
+}
+
+nav .list {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:focus{
     color: white;
-    padding: 25px 0 0 25px;
-    font-size: 24px;
-    font-family: 'Raleway';
-    weight: bold;
-
-
+    outline: none;
+    text-decoration: none;
 }
 
-.nav #link{
-    display: inline-block;
-    color: #fff;
-    padding-right: 15px;
-    font-size: 22px;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: .75s;
+nav a:hover {
+  color: #c5c9c9;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #c5c9c9;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+nav a:hover::before {
+  width: 100%;
 }
 
 .row{
@@ -59,27 +117,20 @@ html, body{
     font-weight: bold;
     color : #fff;
     text-decoration: none;
-
 }
 
 #hero{
-    /* background: url('../img/sun.jpg'); */
     background: linear-gradient(to top, #b3e6ff, #286da8);
-    /* background: linear-gradient(to top, rgba(130,200,300,0), rgba(0,128,255,1)); */
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
-    /* background-color: rgba(0,0,0,0.3); */
-    background-blend-mode: multiply;
     margin-top: -70px;
-    z-index: -50;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 /* Header for welcome sign*/
@@ -90,11 +141,15 @@ html, body{
     font-size: 2.75rem;
     margin-bottom: 1.5rem;
     -webkit-animation-duration: 3s;
-
-
 }
 
-/*------------button------------------------------------------- */
+
+#hero  > #underSign{
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+/* Button style */
 
 .button {
     display: inline-block;
@@ -111,14 +166,24 @@ html, body{
     color: #fff;
 }
 
-.button-accent:hover, .button-accent:focus{
+.button-accent:hover{
     background-color: rgba(0,0,0,0.3);
     color: #fff;
     text-decoration: none;
+}
 
+.button-accent:focus{
+    color: #fff;
+    text-decoration: none;
 }
 
 #iconrow{
+    padding: 60px;
+    outline: 2px solid #000;
+    outline-offset: -2em;
+}
+
+#iconrow2{
     padding: 60px;
     outline: 2px solid #000;
     outline-offset: -2em;
@@ -145,20 +210,24 @@ h5{
     padding-top: 10px;
 }
 
-/*----------------Button for projects--------------*/
+/* Button for projects */
 
 .btn-primary{
-
     background-color: black;
     border-color: black;
+}
 
+.btn-primary:hover{
+    background-color: #c5c9c9;
+    border-color: #c5c9c9;
+    color: black;
 }
 
 .btn-primary:focus{
-
-    background-color: black;
-    border-color: black;
-
+    background-color: #c5c9c9;
+    border-color: #c5c9c9;
+    text-decoration: none;
+    outline: none;
 }
 
 .card-body{
@@ -173,17 +242,14 @@ h5{
     font-weight: bold;
     text-decoration: none;
     color: black
-
 }
 
 .column {
     flex: 25%;
     padding: 10px;
-
 }
 
-
-/*---------------------footer-----------------------------------------*/
+/* footer */
 
 .footer{
     background: #282828;
@@ -196,48 +262,67 @@ h5{
     font-size: 40px;
 }
 
-.linkslogofoot{
-    color: #fff;
+.footer .fab.fa-github:hover{
+    font-size: 44px;
 }
 
-.linkslogofoot:hover, .linkslogofoot:focus{
-    text-decoration: none;
-    color : #fff;
-    font-weight: bold;
+.footer .fas.fa-envelope:hover{
+    font-size: 44px;
 }
 
-.linkslogofoot:visited {
-    color: #fff;
-    font-weight: normal;
-    text-decoration: none;
+.footer .fab.fa-linkedin:hover{
+    font-size: 44px;
 }
 
-.fa-envelope{
-    color: white;
-}
+/* Mobile use */ 
 
-.fa-linkedin{
-    color: white;
-}
+ @media (max-width: 952px){
+    label.logo{
+      font-size: 27px;
+      padding-left: 25px;
+    }
+    nav .navlist .list a{
+      font-size: 16px;
+    }
+  }
 
-@media(max-width: 767px){
-    .sm-dev{
-        padding: 60px;
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+      margin-right: 40px;
+    }
+    .navlist{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .2s;
+    }
+    nav .navlist .list{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav .navlist .list a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ .navlist{
+      left: 0;
     }
 
-    .nav{
-        flex-direction: column;
+    ul{
         text-align: center;
-        align-items: center;
+        padding-left: 10px;
     }
 
-    .nav #logo{
-        padding: 20px 0 0 0;
+    li{
+        display: inline-block;
     }
-
-    .nav #link {
-        padding: 0;
-    }
-}
-
-/*About page */
+  }
